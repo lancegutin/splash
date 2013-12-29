@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+	<style>
+	html {
+		height: 100%;
+	}
+	body {
+		font-family: 'Lato', sans-serif;
+		font-size: 4em;
+		font-weight: 100;
+		line-height: 1.25em;
+		color: #FFFFFF;
+		padding:0;
+		margin: 1.375em 1.5em 1.5em 1.5em;
+		background-attachment: fixed;
+		background: #0099CB;
+	}
+
+	p {
+		margin-bottom: 0.75em;
+		margin-top: 0.75em;
+	}
+
+	a {
+		color: #FFFFFF;
+		text-decoration: none;
+		border-bottom-color: rgba(255, 255, 255, .25);
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		padding-bottom: 2px;
+		box-sizing: border-box;
+		-webkit-transition: border-bottom-color 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+		   -moz-transition: border-bottom-color 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+			-ms-transition: border-bottom-color 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+			 -o-transition: border-bottom-color 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+			    transition: border-bottom-color 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	}
+
+	a:hover {
+		border-bottom-color: rgba(255, 255, 255, 1);
+	}
+
+/*	@media only screen and (max-width: 55em) {	body { font-size: 18px; } }*/
+	@media only screen and (max-width: 42em) { body { font-size: 32px; } }
+	@media only screen and (max-width: 55em) { body { font-size: 4px; } }
+	</style>
+</head>
+<body>
+
+<p>Baltimore born.</p>
+<p>Washington, DC based.</p>
+<p>UX Designer at <a href="http://viget.com">Viget Labs</a>.</p>
+<p>Find me on <a href="http://tumblr.com/lancegutin">tumblr</a>, <a href="http://twitter.com/gutini">twitter</a>, <a href="http://svpply.com/gutini">svpply</a> & <a href="http://www.rdio.com/people/LanceGutin/">rdio</a>.</p>
+</body>
+
+<script>
+var d = new Date(),
+    h = d.getHours(),
+    hicolor,
+    locolor
+
+if (h == 0) hicolor = "#021E52", locolor = "#02265B";
+else if (h == 1) hicolor = "#02265B", locolor = "#042E68";
+else if (h == 2) hicolor = "#042E68", locolor = "#083B7C";
+else if (h == 3) hicolor = "#083B7C", locolor = "#024C8C";
+else if (h == 4) hicolor = "#024C8C", locolor = "#0160A2";
+else if (h == 5) hicolor = "#0160A2", locolor = "#0073B2";
+else if (h == 6) hicolor = "#0073B2", locolor = "#0085BE";
+else if (h == 7) hicolor = "#0085BE", locolor = "#0099CB";
+else if (h == 8) hicolor = "#0099CB", locolor = "#00B0D6";
+else if (h == 9) hicolor = "#00B0D6", locolor = "#50C5DE";
+else if (h == 10) hicolor = "#50C5DE", locolor = "#8DDBE6";
+else if (h == 11) hicolor = "#8DDBE6", locolor = "#BEE9EE";
+else if (h == 12) locolor = "#021E52", hicolor = "#02265B";
+else if (h == 13) locolor = "#02265B", hicolor = "#042E68";
+else if (h == 14) locolor = "#042E68", hicolor = "#083B7C";
+else if (h == 15) locolor = "#083B7C", hicolor = "#024C8C";
+else if (h == 16) locolor = "#024C8C", hicolor = "#0160A2";
+else if (h == 17) locolor = "#0160A2", hicolor = "#0073B2";
+else if (h == 18) locolor = "#0073B2", hicolor = "#0085BE";
+else if (h == 19) locolor = "#0085BE", hicolor = "#0099CB";
+else if (h == 20) locolor = "#0099CB", hicolor = "#00B0D6";
+else if (h == 21) locolor = "#00B0D6", hicolor = "#50C5DE";
+else if (h == 22) locolor = "#50C5DE", hicolor = "#8DDBE6";
+else if (h == 23) locolor = "#8DDBE6", hicolor = "#BEE9EE";
+
+$(document).ready(function(){
+    $("body")
+    .css({background: locolor})
+    .css({background: "-moz-linear-gradient(top, " + hicolor + " 0%, " + locolor + " 100%)"})
+    .css({background: "-webkit-gradient(linear, left top, left bottom, from(" + hicolor + "), to(" + locolor + "))"})
+    .css({background: "-webkit-linear-gradient(top, " + hicolor + " 0%," + locolor + " 100%)"})
+    .css({background: "-o-linear-gradient(top, " + hicolor + " 0%," + locolor + " 100%)"})
+    .css({background: "-ms-linear-gradient(top, " + hicolor + " 0%," + locolor + " 100%)"})
+    .css({background: "linear-gradient(to bottom, " + hicolor + " 0%," + locolor + " 100%)"})
+    .css({filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr=\'" + hicolor + "\', endColorstr=\'" + locolor + "\',GradientType=0)"});
+});
+
+</script>
+</html>
